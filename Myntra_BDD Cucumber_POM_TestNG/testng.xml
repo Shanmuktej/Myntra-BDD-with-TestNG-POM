@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test name="Ordering a Product">
+		<classes>
+			<class name="com.myntra.testrunner.OrderingProduct" />
+		</classes>
+	</test> <!-- Ordering a Product -->
+	<test name="Adding a Default Address">
+		<classes>
+			<class name="com.myntra.testrunner.DefaultAddress" />
+		</classes>
+	</test> <!-- Adding a Default Address -->
+	<test name="Validating Items Count">
+		<classes>
+			<class name="com.myntra.testrunner.ItemsCount" />
+		</classes>
+	</test> <!-- Validating Items Count -->
+	<test name="Update Email">
+		<classes>
+			<class name="com.myntra.testrunner.UpdateEmail" />
+		</classes>
+	</test> <!-- Update Email -->
+</suite> <!-- Suite -->

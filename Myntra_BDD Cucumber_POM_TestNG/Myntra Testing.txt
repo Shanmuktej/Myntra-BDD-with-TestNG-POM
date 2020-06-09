@@ -1,0 +1,23 @@
+Application - Myntra
+
+Testing Engineer - Anem Shanmuka Chandra Teja
+
+MODULES:
+
+GADGETS (MEN & WOMEN)
+ADDRESS
+SEARCH
+FAQ
+
+TESTCASES - 29+ 21+ 9+ 11+ 2(End to End) = 72
+DEFECTS - 10+ 4+ 1+ 1+ 1(End to End) = 16
+
+
+AUTOMATION:
+
+Features :4 , Scenarios : 5
+
+Tools: Cucumber, Selenium
+Framework : BDD, TestNG
+Design Pattern : POM with Page factory
+Parameterisation : Apache POI/Scenario Outline

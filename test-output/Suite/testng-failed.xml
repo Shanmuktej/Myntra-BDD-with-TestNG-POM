@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Adding a Default Address(failed)">
+    <classes>
+      <class name="com.myntra.testrunner.DefaultAddress">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="openBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- com.myntra.testrunner.DefaultAddress -->
+    </classes>
+  </test> <!-- Adding a Default Address(failed) -->
+  <test thread-count="5" name="Validating Items Count(failed)">
+    <classes>
+      <class name="com.myntra.testrunner.ItemsCount">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="closeBrowser"/>
+          <include name="tearDownClass"/>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- com.myntra.testrunner.ItemsCount -->
+    </classes>
+  </test> <!-- Validating Items Count(failed) -->
+  <test thread-count="5" name="Update Email(failed)">
+    <classes>
+      <class name="com.myntra.testrunner.UpdateEmail">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- com.myntra.testrunner.UpdateEmail -->
+    </classes>
+  </test> <!-- Update Email(failed) -->
+</suite> <!-- Failed suite [Suite] -->

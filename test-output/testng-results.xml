@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="3" ignored="0" total="4" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="479065" started-at="2020-05-12T13:33:36Z" finished-at="2020-05-12T13:41:35Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="OrderingProduct.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.myntra.testrunner.OrderingProduct@402a079c]" name="feature" class="com.myntra.testrunner.OrderingProduct"/>
+        <method signature="DefaultAddress.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.myntra.testrunner.DefaultAddress@192b07fd]" name="feature" class="com.myntra.testrunner.DefaultAddress"/>
+        <method signature="ItemsCount.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.myntra.testrunner.ItemsCount@7e0b0338]" name="feature" class="com.myntra.testrunner.ItemsCount"/>
+        <method signature="UpdateEmail.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.myntra.testrunner.UpdateEmail@31610302]" name="feature" class="com.myntra.testrunner.UpdateEmail"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Ordering a Product" duration-ms="143013" started-at="2020-05-12T13:33:36Z" finished-at="2020-05-12T13:35:59Z">
+      <class name="com.myntra.testrunner.OrderingProduct">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.myntra.testrunner.OrderingProduct@402a079c]" name="openBrowser" is-config="true" duration-ms="39118" started-at="2020-05-12T13:33:36Z" finished-at="2020-05-12T13:34:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.myntra.testrunner.OrderingProduct@402a079c]" name="setUpClass" is-config="true" duration-ms="3488" started-at="2020-05-12T13:34:16Z" finished-at="2020-05-12T13:34:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.myntra.testrunner.OrderingProduct@402a079c]" name="feature" duration-ms="77535" started-at="2020-05-12T13:34:21Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-05-12T13:35:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Ordering a product]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.myntra.testrunner.OrderingProduct@402a079c]" name="tearDownClass" is-config="true" duration-ms="170" started-at="2020-05-12T13:35:38Z" finished-at="2020-05-12T13:35:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.myntra.testrunner.OrderingProduct@402a079c]" name="closeBrowser" is-config="true" duration-ms="20731" started-at="2020-05-12T13:35:39Z" finished-at="2020-05-12T13:35:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.myntra.testrunner.OrderingProduct -->
+    </test> <!-- Ordering a Product -->
+    <test name="Adding a Default Address" duration-ms="97838" started-at="2020-05-12T13:36:00Z" finished-at="2020-05-12T13:37:38Z">
+      <class name="com.myntra.testrunner.DefaultAddress">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.myntra.testrunner.DefaultAddress@192b07fd]" name="openBrowser" is-config="true" duration-ms="34090" started-at="2020-05-12T13:36:00Z" finished-at="2020-05-12T13:36:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.myntra.testrunner.DefaultAddress@192b07fd]" name="setUpClass" is-config="true" duration-ms="70" started-at="2020-05-12T13:36:35Z" finished-at="2020-05-12T13:36:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.myntra.testrunner.DefaultAddress@192b07fd]" name="feature" duration-ms="40157" started-at="2020-05-12T13:36:36Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-05-12T13:37:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Default Address]]>
+              </value>
+            </param>
+          </params>
+          <exception class="cucumber.runtime.CucumberException">
+            <message>
+              <![CDATA[java.lang.AssertionError: Make This default address button is not working expected [Shanmuka] but found [Fdgsfdgsg]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[cucumber.runtime.CucumberException: java.lang.AssertionError: Make This default address button is not working expected [Shanmuka] but found [Fdgsfdgsg]
+at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+at com.myntra.testrunner.DefaultAddress.feature(DefaultAddress.java:47)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:71)
+at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.AssertionError: Make This default address button is not working expected [Shanmuka] but found [Fdgsfdgsg]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at com.myntra.stepDefinitions.Steps.the_Other_Address_should_be_made_as_Default_Address(Steps.java:330)
+at ✽.Then the Other Address should be made as Default Address(src/main/java/com/myntra/features/defaultAddress.feature:35)
+]]>
+            </full-stacktrace>
+          </exception> <!-- cucumber.runtime.CucumberException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.myntra.testrunner.DefaultAddress@192b07fd]" name="tearDownClass" is-config="true" duration-ms="20" started-at="2020-05-12T13:37:16Z" finished-at="2020-05-12T13:37:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.myntra.testrunner.DefaultAddress@192b07fd]" name="closeBrowser" is-config="true" duration-ms="21871" started-at="2020-05-12T13:37:16Z" finished-at="2020-05-12T13:37:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.myntra.testrunner.DefaultAddress -->
+    </test> <!-- Adding a Default Address -->
+    <test name="Validating Items Count" duration-ms="123768" started-at="2020-05-12T13:37:39Z" finished-at="2020-05-12T13:39:43Z">
+      <class name="com.myntra.testrunner.ItemsCount">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.myntra.testrunner.ItemsCount@7e0b0338]" name="openBrowser" is-config="true" duration-ms="22325" started-at="2020-05-12T13:37:39Z" finished-at="2020-05-12T13:38:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.myntra.testrunner.ItemsCount@7e0b0338]" name="setUpClass" is-config="true" duration-ms="40" started-at="2020-05-12T13:38:01Z" finished-at="2020-05-12T13:38:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.myntra.testrunner.ItemsCount@7e0b0338]" name="feature" duration-ms="68678" started-at="2020-05-12T13:38:01Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-05-12T13:39:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Items Count]]>
+              </value>
+            </param>
+          </params>
+          <exception class="cucumber.runtime.CucumberException">
+            <message>
+              <![CDATA[java.lang.AssertionError: expected [263] but found [264]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[cucumber.runtime.CucumberException: java.lang.AssertionError: expected [263] but found [264]
+at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+at com.myntra.testrunner.ItemsCount.feature(ItemsCount.java:47)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:71)
+at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.AssertionError: expected [263] but found [264]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:652)
+at org.testng.Assert.assertEquals(Assert.java:662)
+at com.myntra.stepDefinitions.Steps.count_all_items_of_that_product_and_validate(Steps.java:386)
+at ✽.Then Count all items of that product and validate(src/main/java/com/myntra/features/itemsCount.feature:15)
+]]>
+            </full-stacktrace>
+          </exception> <!-- cucumber.runtime.CucumberException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.myntra.testrunner.ItemsCount@7e0b0338]" name="tearDownClass" is-config="true" duration-ms="71" started-at="2020-05-12T13:39:10Z" finished-at="2020-05-12T13:39:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.myntra.testrunner.ItemsCount@7e0b0338]" name="closeBrowser" is-config="true" duration-ms="32463" started-at="2020-05-12T13:39:10Z" finished-at="2020-05-12T13:39:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.myntra.testrunner.ItemsCount -->
+    </test> <!-- Validating Items Count -->
+    <test name="Update Email" duration-ms="112776" started-at="2020-05-12T13:39:43Z" finished-at="2020-05-12T13:41:35Z">
+      <class name="com.myntra.testrunner.UpdateEmail">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.myntra.testrunner.UpdateEmail@31610302]" name="openBrowser" is-config="true" duration-ms="21941" started-at="2020-05-12T13:39:43Z" finished-at="2020-05-12T13:40:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.myntra.testrunner.UpdateEmail@31610302]" name="setUpClass" is-config="true" duration-ms="90" started-at="2020-05-12T13:40:05Z" finished-at="2020-05-12T13:40:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.myntra.testrunner.UpdateEmail@31610302]" name="feature" duration-ms="90312" started-at="2020-05-12T13:40:05Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-05-12T13:41:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Update Email Adress]]>
+              </value>
+            </param>
+          </params>
+          <exception class="cucumber.runtime.CucumberException">
+            <message>
+              <![CDATA[java.lang.AssertionError: Portal displays "Something Went Wrong!" alert]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[cucumber.runtime.CucumberException: java.lang.AssertionError: Portal displays "Something Went Wrong!" alert
+at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+at com.myntra.testrunner.UpdateEmail.feature(UpdateEmail.java:46)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.AssertionError: Portal displays "Something Went Wrong!" alert
+at org.testng.Assert.fail(Assert.java:96)
+at com.myntra.stepDefinitions.Steps.portal_should_ask_to_check_verification_Email(Steps.java:229)
+at ✽.Then portal should ask to check verification Email(src/main/java/com/myntra/features/updateEmail.feature:23)
+]]>
+            </full-stacktrace>
+          </exception> <!-- cucumber.runtime.CucumberException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.myntra.testrunner.UpdateEmail@31610302]" name="tearDownClass" is-config="true" duration-ms="141" started-at="2020-05-12T13:41:35Z" finished-at="2020-05-12T13:41:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.myntra.testrunner.UpdateEmail -->
+    </test> <!-- Update Email -->
+  </suite> <!-- Suite -->
+</testng-results>
